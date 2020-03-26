@@ -1,0 +1,3017 @@
+--- !ruby/object:Foxy::Html::Object
+nodes:
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "<"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "!DOCTYPE html>\n"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :comment
+  content: <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :comment
+  content: "<!--[if gt IE 8]><!-->"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: " "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <html class="no-js" lang="en" >
+  extra:
+  - html
+  - 
+  - - no-js
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: " "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :comment
+  content: "<!--<![endif]-->"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<html>"
+  extra:
+  - html
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<head>"
+  extra:
+  - head
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <script src="/js/vendor/298279967.js">
+  extra:
+  - script
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</script>"
+  extra:
+  - script
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :singletag
+  content: <meta charset="utf-8" />
+  extra:
+  - meta
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :singletag
+  content: <meta name="viewport" content="width=device-width" />
+  extra:
+  - meta
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<title>"
+  extra:
+  - title
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: The Internet
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</title>"
+  extra:
+  - title
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :singletag
+  content: <link href="/css/app.css" rel="stylesheet">
+  extra:
+  - link
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :singletag
+  content: <link href="/css/font-awesome.css" rel="stylesheet">
+  extra:
+  - link
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <script src="/js/vendor/jquery-1.11.3.min.js">
+  extra:
+  - script
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</script>"
+  extra:
+  - script
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <script src="/js/vendor/jquery-ui-1.11.4/jquery-ui.js">
+  extra:
+  - script
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</script>"
+  extra:
+  - script
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <script src="/js/foundation/foundation.js">
+  extra:
+  - script
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</script>"
+  extra:
+  - script
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <script src="/js/foundation/foundation.alerts.js">
+  extra:
+  - script
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</script>"
+  extra:
+  - script
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<script>"
+  extra:
+  - script
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      $(document).foundation();\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</script>"
+  extra:
+  - script
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</head>"
+  extra:
+  - head
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<body>"
+  extra:
+  - body
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <div class="row">
+  extra:
+  - div
+  - 
+  - - row
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <div id="flash-messages" class="large-12 columns">
+  extra:
+  - div
+  - flash-messages
+  - - large-12
+    - columns
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n\n\n\n\n\n\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <div class="row">
+  extra:
+  - div
+  - 
+  - - row
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <a href="https://github.com/tourdedave/the-internet">
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :singletag
+  content: '<img style="position: absolute; top: 0; right: 0; border: 0;" src="/img/forkme_right_green_007200.png"
+    alt="Fork me on GitHub">'
+  extra:
+  - img
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <div id="content" class="large-12 columns">
+  extra:
+  - div
+  - content
+  - - large-12
+    - columns
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<div class='example'>"
+  extra:
+  - div
+  - 
+  - - example
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<h3>"
+  extra:
+  - h3
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Challenging DOM
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</h3>"
+  extra:
+  - h3
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<p>"
+  extra:
+  - p
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: The hardest part in automated web testing is finding the best locators
+    (e.g., ones that well named, unique, and unlikely to change). It's more often
+    than not that the application you're testing was not built with this concept in
+    mind. This example demonstrates that with unique IDs, a table with no helpful
+    locators, and a canvas element.
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</p>"
+  extra:
+  - p
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :singletag
+  content: "<hr>"
+  extra:
+  - hr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<div class='row'>"
+  extra:
+  - div
+  - 
+  - - row
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<div class='large-12 columns large-centered'>"
+  extra:
+  - div
+  - 
+  - - large-12
+    - columns
+    - large-centered
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<div class='large-2 columns'>"
+  extra:
+  - div
+  - 
+  - - large-2
+    - columns
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a id='7b24aac0-51d2-0138-eaec-4a35986d68e3' href='' class='button'>"
+  extra:
+  - a
+  - 7b24aac0-51d2-0138-eaec-4a35986d68e3
+  - - button
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: bar
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</br>"
+  extra:
+  - br
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a id='7b24d880-51d2-0138-eaed-4a35986d68e3' href='' class='button alert'>"
+  extra:
+  - a
+  - 7b24d880-51d2-0138-eaed-4a35986d68e3
+  - - button
+    - alert
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: baz
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</br>"
+  extra:
+  - br
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a id='7b24f6d0-51d2-0138-eaee-4a35986d68e3' href='' class='button success'>"
+  extra:
+  - a
+  - 7b24f6d0-51d2-0138-eaee-4a35986d68e3
+  - - button
+    - success
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: qux
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</br>"
+  extra:
+  - br
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<div class='large-10 columns'>"
+  extra:
+  - div
+  - 
+  - - large-10
+    - columns
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<table>"
+  extra:
+  - table
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n          "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<thead>"
+  extra:
+  - thead
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<th>"
+  extra:
+  - th
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Lorem
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</th>"
+  extra:
+  - th
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<th>"
+  extra:
+  - th
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Ipsum
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</th>"
+  extra:
+  - th
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<th>"
+  extra:
+  - th
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Dolor
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</th>"
+  extra:
+  - th
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<th>"
+  extra:
+  - th
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Sit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</th>"
+  extra:
+  - th
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<th>"
+  extra:
+  - th
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Amet
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</th>"
+  extra:
+  - th
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<th>"
+  extra:
+  - th
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Diceret
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</th>"
+  extra:
+  - th
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<th>"
+  extra:
+  - th
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Action
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</th>"
+  extra:
+  - th
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n          "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</thead>"
+  extra:
+  - thead
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n          "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tbody>"
+  extra:
+  - tbody
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Iuvaret0
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Apeirian0
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Adipisci0
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Definiebas0
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Consequuntur0
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Phaedrum0
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#edit'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: edit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#delete'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: delete
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Iuvaret1
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Apeirian1
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Adipisci1
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Definiebas1
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Consequuntur1
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Phaedrum1
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#edit'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: edit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#delete'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: delete
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Iuvaret2
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Apeirian2
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Adipisci2
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Definiebas2
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Consequuntur2
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Phaedrum2
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#edit'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: edit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#delete'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: delete
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Iuvaret3
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Apeirian3
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Adipisci3
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Definiebas3
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Consequuntur3
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Phaedrum3
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#edit'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: edit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#delete'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: delete
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Iuvaret4
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Apeirian4
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Adipisci4
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Definiebas4
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Consequuntur4
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Phaedrum4
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#edit'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: edit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#delete'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: delete
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Iuvaret5
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Apeirian5
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Adipisci5
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Definiebas5
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Consequuntur5
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Phaedrum5
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#edit'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: edit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#delete'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: delete
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Iuvaret6
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Apeirian6
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Adipisci6
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Definiebas6
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Consequuntur6
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Phaedrum6
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#edit'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: edit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#delete'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: delete
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Iuvaret7
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Apeirian7
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Adipisci7
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Definiebas7
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Consequuntur7
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Phaedrum7
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#edit'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: edit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#delete'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: delete
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Iuvaret8
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Apeirian8
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Adipisci8
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Definiebas8
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Consequuntur8
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Phaedrum8
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#edit'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: edit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#delete'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: delete
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<tr>"
+  extra:
+  - tr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Iuvaret9
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Apeirian9
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Adipisci9
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Definiebas9
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Consequuntur9
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Phaedrum9
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<td>"
+  extra:
+  - td
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#edit'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: edit
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n                "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<a href='#delete'>"
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: delete
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n              "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</td>"
+  extra:
+  - td
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</tr>"
+  extra:
+  - tr
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n          "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</th>"
+  extra:
+  - th
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</table>"
+  extra:
+  - table
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<div class='row'>"
+  extra:
+  - div
+  - 
+  - - row
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n          "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<div class='large-10 columns'>"
+  extra:
+  - div
+  - 
+  - - large-10
+    - columns
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n            "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<canvas id='canvas' width='599' height='200' style='border:1px dotted;'>"
+  extra:
+  - canvas
+  - canvas
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</canvas>"
+  extra:
+  - canvas
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n          "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :singletag
+  content: "<hr>"
+  extra:
+  - hr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<script>"
+  extra:
+  - script
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: |2
+
+    var canvas_el = document.getElementById('canvas');
+    var canvas = canvas_el.getContext('2d');
+    canvas.font = '60px Arial';
+    canvas.strokeText('Answer: 51999',90,112);
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</script>"
+  extra:
+  - script
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <div id='page-footer' class="row">
+  extra:
+  - div
+  - page-footer
+  - - row
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <div class="large-4 large-centered columns">
+  extra:
+  - div
+  - 
+  - - large-4
+    - large-centered
+    - columns
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :singletag
+  content: "<hr>"
+  extra:
+  - hr
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: '<div style="text-align: center;">'
+  extra:
+  - div
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: 'Powered by '
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <a target="_blank" href="http://elementalselenium.com/">
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Elemental Selenium
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</body>"
+  extra:
+  - body
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</html>"
+  extra:
+  - html
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n"
+  extra: 

@@ -1,0 +1,90 @@
+--- !ruby/object:Foxy::Html::Object
+nodes:
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "<"
+  extra:
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "!DOCTYPE html>\n"
+  extra:
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<html>"
+  extra:
+  - html
+  -
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n"
+  extra:
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<body>"
+  extra:
+  - body
+  -
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n"
+  extra:
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<h1>"
+  extra:
+  - h1
+  -
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: My First Heading
+  extra:
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</h1>"
+  extra:
+  - h1
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n"
+  extra:
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<p>"
+  extra:
+  - p
+  -
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: My first paragraph.
+  extra:
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</p>"
+  extra:
+  - p
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n"
+  extra:
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</body>"
+  extra:
+  - body
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n"
+  extra:
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</html>"
+  extra:
+  - html
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n"
+  extra:

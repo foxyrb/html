@@ -1,0 +1,344 @@
+---
+- "\n"
+- "<"
+- "!DOCTYPE html>\n"
+- "\n"
+- " "
+- " "
+- "\n\n"
+- "\n  "
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n    "
+- The Internet
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n      $(document).foundation();\n    "
+- "\n  "
+- "\n  "
+- "\n    "
+- "\n"
+- "\n      "
+- "\n"
+- "\n\n\n\n\n\n\n\n      "
+- "\n"
+- "\n    "
+- "\n"
+- "\n    "
+- "\n"
+- "\n      "
+- "\n      "
+- "\n"
+- "\n        "
+- "\n"
+- "\n  "
+- "\n"
+- Challenging DOM
+- "\n"
+- "\n  "
+- "\n"
+- The hardest part in automated web testing is finding the best locators (e.g., ones
+  that well named, unique, and unlikely to change). It's more often than not that
+  the application you're testing was not built with this concept in mind. This example
+  demonstrates that with unique IDs, a table with no helpful locators, and a canvas
+  element.
+- "\n"
+- "\n  "
+- "\n"
+- "\n\n  "
+- "\n"
+- "\n    "
+- "\n"
+- "\n      "
+- "\n"
+- "\n        "
+- bar
+- "\n"
+- "\n        "
+- baz
+- "\n"
+- "\n        "
+- qux
+- "\n"
+- "\n      "
+- "\n"
+- "\n      "
+- "\n"
+- "\n        "
+- "\n"
+- "\n          "
+- "\n            "
+- "\n              "
+- Lorem
+- "\n              "
+- Ipsum
+- "\n              "
+- Dolor
+- "\n              "
+- Sit
+- "\n              "
+- Amet
+- "\n              "
+- Diceret
+- "\n              "
+- Action
+- "\n            "
+- "\n          "
+- "\n          "
+- "\n\n            "
+- "\n              "
+- Iuvaret0
+- "\n              "
+- Apeirian0
+- "\n              "
+- Adipisci0
+- "\n              "
+- Definiebas0
+- "\n              "
+- Consequuntur0
+- "\n              "
+- Phaedrum0
+- "\n              "
+- "\n                "
+- edit
+- "\n                "
+- delete
+- "\n              "
+- "\n            "
+- "\n\n            "
+- "\n              "
+- Iuvaret1
+- "\n              "
+- Apeirian1
+- "\n              "
+- Adipisci1
+- "\n              "
+- Definiebas1
+- "\n              "
+- Consequuntur1
+- "\n              "
+- Phaedrum1
+- "\n              "
+- "\n                "
+- edit
+- "\n                "
+- delete
+- "\n              "
+- "\n            "
+- "\n\n            "
+- "\n              "
+- Iuvaret2
+- "\n              "
+- Apeirian2
+- "\n              "
+- Adipisci2
+- "\n              "
+- Definiebas2
+- "\n              "
+- Consequuntur2
+- "\n              "
+- Phaedrum2
+- "\n              "
+- "\n                "
+- edit
+- "\n                "
+- delete
+- "\n              "
+- "\n            "
+- "\n\n            "
+- "\n              "
+- Iuvaret3
+- "\n              "
+- Apeirian3
+- "\n              "
+- Adipisci3
+- "\n              "
+- Definiebas3
+- "\n              "
+- Consequuntur3
+- "\n              "
+- Phaedrum3
+- "\n              "
+- "\n                "
+- edit
+- "\n                "
+- delete
+- "\n              "
+- "\n            "
+- "\n\n            "
+- "\n              "
+- Iuvaret4
+- "\n              "
+- Apeirian4
+- "\n              "
+- Adipisci4
+- "\n              "
+- Definiebas4
+- "\n              "
+- Consequuntur4
+- "\n              "
+- Phaedrum4
+- "\n              "
+- "\n                "
+- edit
+- "\n                "
+- delete
+- "\n              "
+- "\n            "
+- "\n\n            "
+- "\n              "
+- Iuvaret5
+- "\n              "
+- Apeirian5
+- "\n              "
+- Adipisci5
+- "\n              "
+- Definiebas5
+- "\n              "
+- Consequuntur5
+- "\n              "
+- Phaedrum5
+- "\n              "
+- "\n                "
+- edit
+- "\n                "
+- delete
+- "\n              "
+- "\n            "
+- "\n\n            "
+- "\n              "
+- Iuvaret6
+- "\n              "
+- Apeirian6
+- "\n              "
+- Adipisci6
+- "\n              "
+- Definiebas6
+- "\n              "
+- Consequuntur6
+- "\n              "
+- Phaedrum6
+- "\n              "
+- "\n                "
+- edit
+- "\n                "
+- delete
+- "\n              "
+- "\n            "
+- "\n\n            "
+- "\n              "
+- Iuvaret7
+- "\n              "
+- Apeirian7
+- "\n              "
+- Adipisci7
+- "\n              "
+- Definiebas7
+- "\n              "
+- Consequuntur7
+- "\n              "
+- Phaedrum7
+- "\n              "
+- "\n                "
+- edit
+- "\n                "
+- delete
+- "\n              "
+- "\n            "
+- "\n\n            "
+- "\n              "
+- Iuvaret8
+- "\n              "
+- Apeirian8
+- "\n              "
+- Adipisci8
+- "\n              "
+- Definiebas8
+- "\n              "
+- Consequuntur8
+- "\n              "
+- Phaedrum8
+- "\n              "
+- "\n                "
+- edit
+- "\n                "
+- delete
+- "\n              "
+- "\n            "
+- "\n\n            "
+- "\n              "
+- Iuvaret9
+- "\n              "
+- Apeirian9
+- "\n              "
+- Adipisci9
+- "\n              "
+- Definiebas9
+- "\n              "
+- Consequuntur9
+- "\n              "
+- Phaedrum9
+- "\n              "
+- "\n                "
+- edit
+- "\n                "
+- delete
+- "\n              "
+- "\n            "
+- "\n\n          "
+- "\n        "
+- "\n"
+- "\n        "
+- "\n"
+- "\n          "
+- "\n"
+- "\n            "
+- "\n          "
+- "\n"
+- "\n        "
+- "\n"
+- "\n      "
+- "\n"
+- "\n    "
+- "\n"
+- "\n  "
+- "\n"
+- "\n  "
+- "\n"
+- "\n"
+- "\n"
+- "\n\n"
+- |2
+
+  var canvas_el = document.getElementById('canvas');
+  var canvas = canvas_el.getContext('2d');
+  canvas.font = '60px Arial';
+  canvas.strokeText('Answer: 51999',90,112);
+- "\n\n      "
+- "\n"
+- "\n    "
+- "\n"
+- "\n    "
+- "\n"
+- "\n      "
+- "\n"
+- "\n        "
+- "\n"
+- "\n        "
+- "\n"
+- 'Powered by '
+- Elemental Selenium
+- "\n"
+- "\n      "
+- "\n"
+- "\n    "
+- "\n"
+- "\n  "
+- "\n"
+- "\n"

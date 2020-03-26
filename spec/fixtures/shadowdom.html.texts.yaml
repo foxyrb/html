@@ -1,0 +1,105 @@
+---
+- "<"
+- "!DOCTYPE html>\n"
+- "\n"
+- " "
+- " "
+- "\n\n"
+- "\n  "
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n    "
+- The Internet
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n    "
+- "\n      $(document).foundation();\n    "
+- "\n  "
+- "\n  "
+- "\n    "
+- "\n"
+- "\n      "
+- "\n"
+- "\n\n\n\n\n\n\n\n      "
+- "\n"
+- "\n    "
+- "\n"
+- "\n    "
+- "\n"
+- "\n      "
+- "\n      "
+- "\n"
+- "\n        "
+- "\n"
+- Simple template
+- "\n"
+- "\n\n"
+- |2+
+
+      customElements.define('my-paragraph',
+          class extends HTMLElement {
+              constructor() {
+                  super();
+
+                  const template = document.getElementById('my-paragraph');
+                  const templateContent = template.content;
+
+                  this.attachShadow({mode: 'open'}).appendChild(
+                      templateContent.cloneNode(true)
+                  );
+              }
+          }
+      );
+
+      const slottedSpan = document.querySelector('my-paragraph span');
+
+- "\n\n"
+- "\n  "
+- "\n    p {\n      color: white;\n      background-color: #666;\n      padding: 5px;\n
+  \   }\n  "
+- "\n  "
+- "\n"
+- My default text
+- "\n"
+- "\n"
+- "\n\n"
+- "\n  "
+- Let's have some different text!
+- "\n"
+- "\n\n"
+- "\n  "
+- "\n"
+- "\n    "
+- Let's have some different text!
+- "\n    "
+- In a list!
+- "\n  "
+- "\n"
+- "\n"
+- "\n\n      "
+- "\n"
+- "\n    "
+- "\n"
+- "\n    "
+- "\n"
+- "\n      "
+- "\n"
+- "\n        "
+- "\n"
+- "\n        "
+- "\n"
+- 'Powered by '
+- Elemental Selenium
+- "\n"
+- "\n      "
+- "\n"
+- "\n    "
+- "\n"
+- "\n  "
+- "\n"
+- "\n"

@@ -1,0 +1,17 @@
+--- "<!DOCTYPE html> The Internet $(document).foundation(); Challenging DOM The hardest
+  part in automated web testing is finding the best locators (e.g., ones that well
+  named, unique, and unlikely to change). It's more often than not that the application
+  you're testing was not built with this concept in mind. This example demonstrates
+  that with unique IDs, a table with no helpful locators, and a canvas element. bar
+  baz qux Lorem Ipsum Dolor Sit Amet Diceret Action Iuvaret0 Apeirian0 Adipisci0 Definiebas0
+  Consequuntur0 Phaedrum0 edit delete Iuvaret1 Apeirian1 Adipisci1 Definiebas1 Consequuntur1
+  Phaedrum1 edit delete Iuvaret2 Apeirian2 Adipisci2 Definiebas2 Consequuntur2 Phaedrum2
+  edit delete Iuvaret3 Apeirian3 Adipisci3 Definiebas3 Consequuntur3 Phaedrum3 edit
+  delete Iuvaret4 Apeirian4 Adipisci4 Definiebas4 Consequuntur4 Phaedrum4 edit delete
+  Iuvaret5 Apeirian5 Adipisci5 Definiebas5 Consequuntur5 Phaedrum5 edit delete Iuvaret6
+  Apeirian6 Adipisci6 Definiebas6 Consequuntur6 Phaedrum6 edit delete Iuvaret7 Apeirian7
+  Adipisci7 Definiebas7 Consequuntur7 Phaedrum7 edit delete Iuvaret8 Apeirian8 Adipisci8
+  Definiebas8 Consequuntur8 Phaedrum8 edit delete Iuvaret9 Apeirian9 Adipisci9 Definiebas9
+  Consequuntur9 Phaedrum9 edit delete var canvas_el = document.getElementById('canvas');
+  var canvas = canvas_el.getContext('2d'); canvas.font = '60px Arial'; canvas.strokeText('Answer:
+  51999',90,112); Powered by Elemental Selenium"

@@ -1,0 +1,7 @@
+--- "<!DOCTYPE html> The Internet $(document).foundation(); Simple template customElements.define('my-paragraph',
+  class extends HTMLElement { constructor() { super(); const template = document.getElementById('my-paragraph');
+  const templateContent = template.content; this.attachShadow({mode: 'open'}).appendChild(
+  templateContent.cloneNode(true) ); } } ); const slottedSpan = document.querySelector('my-paragraph
+  span'); p { color: white; background-color: #666; padding: 5px; } My default text
+  Let's have some different text! Let's have some different text! In a list! Powered
+  by Elemental Selenium"

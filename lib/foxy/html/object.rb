@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "forwardable"
-
 require "htmlentities"
 
 module Foxy
@@ -9,17 +7,13 @@ module Foxy
     class Object
       DECODER = HTMLEntities.new
 
-      extend Forwardable
-      include Enumerable
       attr_reader :nodes
-
-      def_delegators :nodes, :each, :empty?, *Enumerable.public_instance_methods
 
       def initialize(html)
         @nodes =
           if html.nil?
             []
-          elsif html.is_a?(self.class)
+          elsif html.respond_to?(:nodes)
             html.nodes
           elsif html.respond_to?(:to_str)
             html.to_str.scan(RE_HTML).map { |args| Node.build(*args) }
@@ -31,7 +25,7 @@ module Foxy
       end
 
       def clean(**kws)
-        Foxy::Html::Object.new(map { |node| node.clean(**kws) })
+        Foxy::Html::Object.new(nodes.map { |node| node.clean(**kws) })
       end
 
       def ==(other)
@@ -45,7 +39,7 @@ module Foxy
         buff = []
 
         close_tagname = nil
-        each do |node| # [1:-1]:
+        nodes.each do |node| # [1:-1]:
           # El orden de los if es importante para que devuelva el
           # primer y el ultimo nodo
           if y.zero? && node.tag? && (!tagname || node.tagname! == tagname) &&
@@ -91,11 +85,11 @@ module Foxy
       end
 
       def rebuild
-        map(&:content).join
+        nodes.map(&:content).join
       end
 
       def texts
-        each_with_object([]) do |node, acc|
+        nodes.each_with_object([]) do |node, acc|
           if node.type == :notag
             acc << DECODER.decode(node.content)
           elsif BLOCK_TAGS.include?(node.tagname!)
@@ -105,7 +99,7 @@ module Foxy
       end
 
       def comments
-        each_with_object([]) do |node, acc|
+        nodes.each_with_object([]) do |node, acc|
           acc << node.content.sub(/^<!--/, "").sub(/-->$/, "") if node.type == :comment
         end
       end
@@ -114,12 +108,20 @@ module Foxy
         texts.join.gsub(/[ \r\n\s]+/, " ").strip
       end
 
+      def as_number
+        joinedtexts.gsub(",", "").to_i
+      end
+
       def attr(name)
-        first.attr(name)
+        nodes.first.attr(name)
       end
 
       def id
-        first.id
+        nodes.first.id
+      end
+
+      def cls!
+        nodes.first.cls!
       end
 
       def to_s
@@ -132,6 +134,10 @@ module Foxy
             tr.search(tagname: "td").map(&:joinedtexts)
           end
         end
+      end
+
+      def empty?
+        nodes.empty?
       end
 
       %i[src href title].each do |m|

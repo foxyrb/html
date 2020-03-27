@@ -31,6 +31,10 @@ module Foxy
         each_with_object([]) { |node, acc| acc << node.joinedtexts if node }
       end
 
+      def as_number
+        each_with_object([]) { |node, acc| acc << node.as_number if node }
+      end
+
       def map
         self.class.new(super)
       end

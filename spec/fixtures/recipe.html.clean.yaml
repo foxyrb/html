@@ -1,0 +1,395 @@
+--- !ruby/object:Foxy::Html::Object
+nodes:
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "<"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "!DOCTYPE HTML>\n"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<html>"
+  extra:
+  - html
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<head>"
+  extra:
+  - head
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :singletag
+  content: "<meta/>"
+  extra:
+  - meta
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<title>"
+  extra:
+  - title
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: example code of Recipe with Microdata
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</title>"
+  extra:
+  - title
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <a href="https://profiles.google.com/103074333439002308043/about">
+  extra:
+  - a
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Bidhan Chatterjee
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</a>"
+  extra:
+  - a
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</head>"
+  extra:
+  - head
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<body>"
+  extra:
+  - body
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <article class="h-recipe">
+  extra:
+  - article
+  - 
+  - - h-recipe
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <h1 class="p-name">
+  extra:
+  - h1
+  - 
+  - - p-name
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Bagels
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</h1>"
+  extra:
+  - h1
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<ul>"
+  extra:
+  - ul
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <li class="p-ingredient">
+  extra:
+  - li
+  - 
+  - - p-ingredient
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Flour
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</li>"
+  extra:
+  - li
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <li class="p-ingredient">
+  extra:
+  - li
+  - 
+  - - p-ingredient
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Sugar
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</li>"
+  extra:
+  - li
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <li class="p-ingredient">
+  extra:
+  - li
+  - 
+  - - p-ingredient
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Yeast
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</li>"
+  extra:
+  - li
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</ul>"
+  extra:
+  - ul
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<p>"
+  extra:
+  - p
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: 'Takes '
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <time class="dt-duration">
+  extra:
+  - time
+  - 
+  - - dt-duration
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: 1 hour
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</time>"
+  extra:
+  - time
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: ",\n         serves "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <data class="p-yield">
+  extra:
+  - data
+  - 
+  - - p-yield
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: four people
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</data>"
+  extra:
+  - data
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "."
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</p>"
+  extra:
+  - p
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: <div class="e-instructions">
+  extra:
+  - div
+  - 
+  - - e-instructions
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<ol>"
+  extra:
+  - ol
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n          "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<li>"
+  extra:
+  - li
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: Start by mixing all the ingredients together.
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</li>"
+  extra:
+  - li
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n        "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</ol>"
+  extra:
+  - ol
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</div>"
+  extra:
+  - div
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</article>"
+  extra:
+  - article
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</body>"
+  extra:
+  - body
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n"
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</html>"
+  extra:
+  - html
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n"
+  extra: 

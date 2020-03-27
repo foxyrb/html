@@ -1,0 +1,29 @@
+--- |
+  <!DOCTYPE HTML>
+  <html lang="en">
+    <head>
+      <meta charset=utf-8>
+      <title>example code of Recipe with Microdata</title>
+      <a rel="author" href="https://profiles.google.com/103074333439002308043/about">Bidhan Chatterjee</a>
+    </head>
+    <body>
+      <article class="h-recipe">
+        <h1 class="p-name">Bagels</h1>
+
+        <ul>
+          <li class="p-ingredient">Flour</li>
+          <li class="p-ingredient">Sugar</li>
+          <li class="p-ingredient">Yeast</li>
+        </ul>
+
+        <p>Takes <time class="dt-duration" datetime="1H">1 hour</time>,
+           serves <data class="p-yield" value="4">four people</data>.</p>
+
+        <div class="e-instructions">
+          <ol>
+            <li>Start by mixing all the ingredients together.</li>
+          </ol>
+        </div>
+      </article>
+    </body>
+  </html>

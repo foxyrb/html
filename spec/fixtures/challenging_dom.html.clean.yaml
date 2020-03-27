@@ -30,11 +30,11 @@ nodes:
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<html>"
+  content: <html class="no-js">
   extra:
   - html
   - 
-  - []
+  - - no-js
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: " "
@@ -82,7 +82,7 @@ nodes:
   extra:
   - script
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
@@ -126,7 +126,7 @@ nodes:
   extra:
   - title
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
@@ -166,7 +166,7 @@ nodes:
   extra:
   - script
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
@@ -184,7 +184,7 @@ nodes:
   extra:
   - script
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
@@ -202,7 +202,7 @@ nodes:
   extra:
   - script
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
@@ -220,7 +220,7 @@ nodes:
   extra:
   - script
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
@@ -242,7 +242,7 @@ nodes:
   extra:
   - script
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n  "
@@ -253,7 +253,7 @@ nodes:
   extra:
   - head
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n  "
@@ -271,22 +271,23 @@ nodes:
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="row">
   extra:
   - div
   - 
-  - []
+  - - row
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n      "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="large-12 columns">
   extra:
   - div
   - 
-  - []
+  - - large-12
+    - columns
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n\n\n\n\n\n\n      "
@@ -297,7 +298,7 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
@@ -308,18 +309,18 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="row">
   extra:
   - div
   - 
-  - []
+  - - row
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n      "
@@ -344,29 +345,30 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n      "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="large-12 columns">
   extra:
   - div
   - 
-  - []
+  - - large-12
+    - columns
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n        "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="example">
   extra:
   - div
   - 
-  - []
+  - - example
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n  "
@@ -388,7 +390,7 @@ nodes:
   extra:
   - h3
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n  "
@@ -414,7 +416,7 @@ nodes:
   extra:
   - p
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n  "
@@ -432,44 +434,47 @@ nodes:
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="row">
   extra:
   - div
   - 
-  - []
+  - - row
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="large-12 columns large-centered">
   extra:
   - div
   - 
-  - []
+  - - large-12
+    - columns
+    - large-centered
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n      "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="large-2 columns">
   extra:
   - div
   - 
-  - []
+  - - large-2
+    - columns
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n        "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: <a href="">
+  content: <a class="button" href="">
   extra:
   - a
   - 
-  - []
+  - - button
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: bar
@@ -480,25 +485,26 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :closetag
   content: "</br>"
   extra:
   - br
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n        "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: <a href="">
+  content: <a class="button alert" href="">
   extra:
   - a
   - 
-  - []
+  - - button
+    - alert
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: baz
@@ -509,25 +515,26 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :closetag
   content: "</br>"
   extra:
   - br
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n        "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: <a href="">
+  content: <a class="button success" href="">
   extra:
   - a
   - 
-  - []
+  - - button
+    - success
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: qux
@@ -538,14 +545,14 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :closetag
   content: "</br>"
   extra:
   - br
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n      "
@@ -556,18 +563,19 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n      "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="large-10 columns">
   extra:
   - div
   - 
-  - []
+  - - large-10
+    - columns
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n        "
@@ -622,7 +630,7 @@ nodes:
   extra:
   - th
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -644,7 +652,7 @@ nodes:
   extra:
   - th
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -666,7 +674,7 @@ nodes:
   extra:
   - th
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -688,7 +696,7 @@ nodes:
   extra:
   - th
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -710,7 +718,7 @@ nodes:
   extra:
   - th
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -732,7 +740,7 @@ nodes:
   extra:
   - th
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -754,7 +762,7 @@ nodes:
   extra:
   - th
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -765,7 +773,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n          "
@@ -776,7 +784,7 @@ nodes:
   extra:
   - thead
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n          "
@@ -820,7 +828,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -842,7 +850,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -864,7 +872,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -886,7 +894,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -908,7 +916,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -930,7 +938,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -963,7 +971,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n                "
@@ -985,7 +993,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -996,7 +1004,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -1007,7 +1015,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n            "
@@ -1040,7 +1048,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1062,7 +1070,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1084,7 +1092,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1106,7 +1114,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1128,7 +1136,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1150,7 +1158,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1183,7 +1191,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n                "
@@ -1205,7 +1213,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1216,7 +1224,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -1227,7 +1235,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n            "
@@ -1260,7 +1268,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1282,7 +1290,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1304,7 +1312,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1326,7 +1334,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1348,7 +1356,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1370,7 +1378,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1403,7 +1411,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n                "
@@ -1425,7 +1433,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1436,7 +1444,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -1447,7 +1455,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n            "
@@ -1480,7 +1488,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1502,7 +1510,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1524,7 +1532,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1546,7 +1554,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1568,7 +1576,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1590,7 +1598,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1623,7 +1631,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n                "
@@ -1645,7 +1653,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1656,7 +1664,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -1667,7 +1675,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n            "
@@ -1700,7 +1708,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1722,7 +1730,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1744,7 +1752,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1766,7 +1774,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1788,7 +1796,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1810,7 +1818,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1843,7 +1851,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n                "
@@ -1865,7 +1873,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1876,7 +1884,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -1887,7 +1895,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n            "
@@ -1920,7 +1928,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1942,7 +1950,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1964,7 +1972,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -1986,7 +1994,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2008,7 +2016,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2030,7 +2038,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2063,7 +2071,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n                "
@@ -2085,7 +2093,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2096,7 +2104,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -2107,7 +2115,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n            "
@@ -2140,7 +2148,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2162,7 +2170,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2184,7 +2192,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2206,7 +2214,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2228,7 +2236,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2250,7 +2258,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2283,7 +2291,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n                "
@@ -2305,7 +2313,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2316,7 +2324,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -2327,7 +2335,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n            "
@@ -2360,7 +2368,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2382,7 +2390,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2404,7 +2412,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2426,7 +2434,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2448,7 +2456,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2470,7 +2478,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2503,7 +2511,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n                "
@@ -2525,7 +2533,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2536,7 +2544,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -2547,7 +2555,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n            "
@@ -2580,7 +2588,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2602,7 +2610,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2624,7 +2632,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2646,7 +2654,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2668,7 +2676,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2690,7 +2698,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2723,7 +2731,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n                "
@@ -2745,7 +2753,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2756,7 +2764,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -2767,7 +2775,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n            "
@@ -2800,7 +2808,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2822,7 +2830,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2844,7 +2852,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2866,7 +2874,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2888,7 +2896,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2910,7 +2918,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2943,7 +2951,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n                "
@@ -2965,7 +2973,7 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n              "
@@ -2976,7 +2984,7 @@ nodes:
   extra:
   - td
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -2987,7 +2995,7 @@ nodes:
   extra:
   - tr
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n          "
@@ -2998,7 +3006,7 @@ nodes:
   extra:
   - th
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n        "
@@ -3009,29 +3017,30 @@ nodes:
   extra:
   - table
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n        "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="row">
   extra:
   - div
   - 
-  - []
+  - - row
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n          "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="large-10 columns">
   extra:
   - div
   - 
-  - []
+  - - large-10
+    - columns
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n            "
@@ -3049,7 +3058,7 @@ nodes:
   extra:
   - canvas
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n          "
@@ -3060,7 +3069,7 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n        "
@@ -3071,7 +3080,7 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n      "
@@ -3082,7 +3091,7 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
@@ -3093,7 +3102,7 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n  "
@@ -3104,7 +3113,7 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n  "
@@ -3126,7 +3135,7 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n"
@@ -3153,7 +3162,7 @@ nodes:
   extra:
   - script
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n\n      "
@@ -3164,7 +3173,7 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
@@ -3175,29 +3184,31 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="row">
   extra:
   - div
   - 
-  - []
+  - - row
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n      "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<div>"
+  content: <div class="large-4 large-centered columns">
   extra:
   - div
   - 
-  - []
+  - - large-4
+    - large-centered
+    - columns
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n        "
@@ -3241,14 +3252,14 @@ nodes:
   extra:
   - a
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :closetag
   content: "</div>"
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n      "
@@ -3259,7 +3270,7 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n    "
@@ -3270,7 +3281,7 @@ nodes:
   extra:
   - div
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n  "
@@ -3281,7 +3292,7 @@ nodes:
   extra:
   - body
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n"
@@ -3292,7 +3303,7 @@ nodes:
   extra:
   - html
   - 
-  - []
+  - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
   content: "\n"

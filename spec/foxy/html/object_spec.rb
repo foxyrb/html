@@ -3,7 +3,7 @@
 RSpec.describe(Foxy::Html::Object) do
   describe ".new" do
     Dir["#{FIXTURE_FOLDER}/*.html"].each do |path|
-      it path.to_s do
+      it "#{path}.yaml" do
         check_file(path, "#{path}.yaml") { |content| Foxy::Html::Object.new(content) }
       end
     end
@@ -11,7 +11,7 @@ RSpec.describe(Foxy::Html::Object) do
 
   describe "#clean" do
     Dir["#{FIXTURE_FOLDER}/*.html"].each do |path|
-      it path.to_s do
+      it "#{path}.clean.yaml" do
         check_file(path, "#{path}.clean.yaml") { |content| Foxy::Html::Object.new(content).clean }
       end
     end
@@ -19,7 +19,7 @@ RSpec.describe(Foxy::Html::Object) do
 
   describe "#rebuild" do
     Dir["#{FIXTURE_FOLDER}/*.html"].each do |path|
-      it path.to_s do
+      it "#{path}.rebuild.yaml" do
         check_file(path, "#{path}.rebuild.yaml") { |content| Foxy::Html::Object.new(content).rebuild }
       end
     end
@@ -27,7 +27,7 @@ RSpec.describe(Foxy::Html::Object) do
 
   describe "#texts" do
     Dir["#{FIXTURE_FOLDER}/*.html"].each do |path|
-      it path.to_s do
+      it "#{path}.texts.yaml" do
         check_file(path, "#{path}.texts.yaml") { |content| Foxy::Html::Object.new(content).texts }
       end
     end
@@ -35,7 +35,7 @@ RSpec.describe(Foxy::Html::Object) do
 
   describe "#comments" do
     Dir["#{FIXTURE_FOLDER}/*.html"].each do |path|
-      it path.to_s do
+      it "#{path}.comments.yaml" do
         check_file(path, "#{path}.comments.yaml") { |content| Foxy::Html::Object.new(content).comments }
       end
     end
@@ -43,7 +43,7 @@ RSpec.describe(Foxy::Html::Object) do
 
   describe "#joinedtexts" do
     Dir["#{FIXTURE_FOLDER}/*.html"].each do |path|
-      it path.to_s do
+      it "#{path}.joinedtexts.yaml" do
         check_file(path, "#{path}.joinedtexts.yaml") { |content| Foxy::Html::Object.new(content).joinedtexts }
       end
     end
@@ -51,7 +51,7 @@ RSpec.describe(Foxy::Html::Object) do
 
   describe "#tables" do
     Dir["#{FIXTURE_FOLDER}/*.html"].each do |path|
-      it path.to_s do
+      it "#{path}.tables.yaml" do
         check_file(path, "#{path}.tables.yaml") { |content| Foxy::Html::Object.new(content).tables }
       end
     end
@@ -64,7 +64,7 @@ RSpec.describe(Foxy::Html::Object) do
 
       expect(html.css("#page-footer").joinedtexts).to eq ["Powered by Elemental Selenium"]
       expect(html.css("#page-footer").rebuild).to eq "<div id='page-footer' class=\"row\">\n      <div class=\"large-4 large-centered columns\">\n        <hr>\n        <div style=\"text-align: center;\">Powered by <a target=\"_blank\" href=\"http://elementalselenium.com/\">Elemental Selenium</a></div>\n      </div>\n    </div>"
-      expect(html.css("#page-footer").clean.rebuild).to eq "<div>\n      <div>\n        <hr/>\n        <div>Powered by <a href=\"http://elementalselenium.com/\">Elemental Selenium</a></div>\n      </div>\n    </div>"
+      expect(html.css("#page-footer").clean.rebuild).to eq "<div class=\"row\">\n      <div class=\"large-4 large-centered columns\">\n        <hr/>\n        <div>Powered by <a href=\"http://elementalselenium.com/\">Elemental Selenium</a></div>\n      </div>\n    </div>"
     end
 
     it "li" do
@@ -84,8 +84,20 @@ RSpec.describe(Foxy::Html::Object) do
       html = Foxy::Html::Object.new(shadowdom)
       li = html.css("li")
       li2 = html.css("ul").css("li")
+      li3 = html.css("ul li")
 
       expect(li2).to eq li
+      expect(li2).to eq li3
+    end
+  end
+
+  describe "#as_number" do
+    it "numbers.html" do
+      numbers = load_fixture("numbers.html")
+      html = Foxy::Html::Object.new(numbers)
+      number = html.css("ul").css("li").as_number
+
+      expect(number).to eq [1, 20, 3000]
     end
   end
 end

@@ -6,7 +6,7 @@ nodes:
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
-  content: "!DOCTYPE html>\n"
+  content: "!DOCTYPE HTML>\n"
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
@@ -17,7 +17,7 @@ nodes:
   - []
 - !ruby/struct:Foxy::Html::Node
   type: :notag
-  content: "\n"
+  content: "\n  "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
@@ -28,51 +28,95 @@ nodes:
   - []
 - !ruby/struct:Foxy::Html::Node
   type: :notag
-  content: "\n\n"
+  content: "\n    "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<h1>"
+  content: "<ul>"
   extra:
-  - h1
+  - ul
   - 
   - []
 - !ruby/struct:Foxy::Html::Node
   type: :notag
-  content: My First Heading
-  extra: 
-- !ruby/struct:Foxy::Html::Node
-  type: :closetag
-  content: "</h1>"
-  extra:
-  - h1
-  - 
-  - 
-- !ruby/struct:Foxy::Html::Node
-  type: :notag
-  content: "\n\n"
+  content: "\n      "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<p>"
+  content: "<li>"
   extra:
-  - p
+  - li
   - 
   - []
 - !ruby/struct:Foxy::Html::Node
   type: :notag
-  content: My first paragraph.
+  content: '1'
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :closetag
-  content: "</p>"
+  content: "</li>"
   extra:
-  - p
+  - li
   - 
   - 
 - !ruby/struct:Foxy::Html::Node
   type: :notag
-  content: "\n\n"
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<li>"
+  extra:
+  - li
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: '20'
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</li>"
+  extra:
+  - li
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n      "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :tag
+  content: "<li>"
+  extra:
+  - li
+  - 
+  - []
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: '3,000'
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</li>"
+  extra:
+  - li
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n    "
+  extra: 
+- !ruby/struct:Foxy::Html::Node
+  type: :closetag
+  content: "</ul>"
+  extra:
+  - ul
+  - 
+  - 
+- !ruby/struct:Foxy::Html::Node
+  type: :notag
+  content: "\n  "
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :closetag

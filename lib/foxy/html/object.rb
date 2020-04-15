@@ -30,14 +30,15 @@ module Foxy
         other.is_a?(self.class) && nodes == other.nodes
       end
 
-      def isearch(**conditions)
+      def isearch(only_childs: false, **conditions)
         conditions[:attrs] = Array(conditions[:attrs])
         conditions[:cls] = Array(conditions[:cls])
         conditions[:tagname] &&= conditions[:tagname].downcase
         y = 0
         buffer = []
         close_tagname = nil
-        nodes.each do |node| # [1:-1]:
+        nodes = only_childs ? self.nodes[1...-1] : self.nodes
+        nodes.each do |node|
           # El orden de los if es importante para que devuelva el
           # primer y el ultimo nodo
           if y.zero? && node.tag? && check_conditions(node, **conditions)

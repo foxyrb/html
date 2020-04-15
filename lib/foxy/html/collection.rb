@@ -19,7 +19,7 @@ module Foxy
       end
 
       def attr(name)
-        objects.each_with_object([]) { |node, acc| acc << node.attr(name) if node }
+        objects.each_with_object([]) { |object, acc| acc << object.attr(name) if object }
       end
 
       def first
@@ -33,14 +33,16 @@ module Foxy
       def search(**kws)
         filters = kws.delete(:filters) || []
 
-        result = flat_map { |node| node.search(**kws) }
+        result = flat_map { |object| object.search(**kws) }
 
         filters.inject(result) { |memo, filter| memo.public_send(filter) }
       end
 
       def css(query)
         # query.split(/\s+/).inject(self) { |memo, q| memo.search(**parse_css(q)) }
-        query.scan(/(?:(?:[^\s\[]+)|(?:\[[^\]]+\]))+/).inject(self) { |memo, q| memo.search(**parse_css(q)) }
+        query.scan(/(?:(?:[^\s\[]+)|(?:\[[^\]]+\]))+/).inject(self) do |memo, q|
+          memo.search(only_childs: true, **parse_css(q))
+        end
       end
 
       def texts
@@ -48,11 +50,11 @@ module Foxy
       end
 
       def joinedtexts
-        objects.each_with_object([]) { |node, acc| acc << node.joinedtexts if node }
+        objects.each_with_object([]) { |object, acc| acc << object.joinedtexts if object }
       end
 
       def as_number
-        objects.each_with_object([]) { |node, acc| acc << node.as_number if node }
+        objects.each_with_object([]) { |object, acc| acc << object.as_number if object }
       end
 
       def map(&block)

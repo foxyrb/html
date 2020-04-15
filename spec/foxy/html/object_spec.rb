@@ -127,6 +127,16 @@ RSpec.describe(Foxy::Html::Object) do
 
       expect(texts).to eq ["Let's have some different text! In a list!"]
     end
+
+    it "div div div" do
+      shadowdom = load_fixture("shadowdom.html")
+      html = Foxy::Html::Object.new(shadowdom)
+
+      expect(html.css("div div").count).to eq 3
+      expect(html.css("div div").objects.map { |object| object.nodes.first.content }).to eq ["<div id=\"flash-messages\" class=\"large-12 columns\">", "<div id=\"content\" class=\"large-12 columns\">", "<div class=\"large-4 large-centered columns\">"]
+      expect(html.css("div div div").count).to eq 1
+      expect(html.css("div div div").objects.map { |object| object.nodes.first.content }).to eq ["<div style=\"text-align: center;\">"]
+    end
   end
 
   describe "#as_number" do

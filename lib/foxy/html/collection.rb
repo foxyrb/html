@@ -4,47 +4,71 @@ require "delegate"
 
 module Foxy
   module Html
-    class Collection < SimpleDelegator
+    class Collection
+      attr_reader :objects
+
+      alias to_ary objects
+      alias to_a objects
+
+      def initialize(objects)
+        @objects = objects
+      end
+
+      def ==(other)
+        other.respond_to?(:to_a) && objects == other.to_a
+      end
+
       def attr(name)
-        each_with_object([]) { |node, acc| acc << node.attr(name) if node }
+        objects.each_with_object([]) { |node, acc| acc << node.attr(name) if node }
+      end
+
+      def first
+        objects.first
+      end
+
+      def count
+        objects.count
       end
 
       def search(**kws)
-        return search(parse_css(kws[:css])) if kws[:css]
+        filters = kws.delete(:filters) || []
 
-        filters = kws.delete(:filters)
+        result = flat_map { |node| node.search(**kws) }
 
-        Collection.new(flat_map { |node| node.search(**kws) }).tap do |r|
-          return filters.inject(r) { |_memo, filter| r.public_send(filter) } if filters
-        end
+        filters.inject(result) { |memo, filter| memo.public_send(filter) }
       end
 
       def css(query)
-        query.split(/\s+/).inject(self) { |memo, q| memo.search(css: q) }
+        # query.split(/\s+/).inject(self) { |memo, q| memo.search(**parse_css(q)) }
+        query.scan(/(?:(?:[^\s\[]+)|(?:\[[^\]]+\]))+/).inject(self) { |memo, q| memo.search(**parse_css(q)) }
       end
 
       def texts
-        map(&:texts).__getobj__
+        objects.map(&:texts)
       end
 
       def joinedtexts
-        each_with_object([]) { |node, acc| acc << node.joinedtexts if node }
+        objects.each_with_object([]) { |node, acc| acc << node.joinedtexts if node }
       end
 
       def as_number
-        each_with_object([]) { |node, acc| acc << node.as_number if node }
+        objects.each_with_object([]) { |node, acc| acc << node.as_number if node }
       end
 
-      def map
-        self.class.new(super)
+      def map(&block)
+        self.class.new(objects.map(&block))
       end
 
-      def flat_map
-        self.class.new(super)
+      def filter(&block)
+        self.class.new(objects.filter(&block))
+      end
+
+      def flat_map(&block)
+        self.class.new(objects.flat_map(&block))
       end
 
       def rebuild
-        map(&:to_s).__getobj__.join
+        objects.map(&:to_s).join
       end
 
       def clean(*args)
@@ -61,16 +85,20 @@ module Foxy
       # assert Foxy::Html.new.parse_css(".class.class") == {cls: ["class", "class"]}
       # assert Foxy::Html.new.parse_css(".cls.class") == {cls: ["cls", "class"]}
       def parse_css(css)
-        token = "([^:#\.\s]+)"
+        token = "([^:#\.\s\\[\\]]+)"
         css
-          .scan(/#{token}|##{token}|\.#{token}|:#{token}/)
-          .each_with_object({}) do |(tagname, id, cls, filter), memo|
-            next memo[:tagname] = tagname if tagname
-            next memo[:id] = id if id
+          .scan(/#{token}|##{token}|\.#{token}|:#{token}|(?:\[#{token}=#{token}\])/)
+          .each_with_object({}) do |(tagname, id, cls, filter, attr_name, attr_value), memo|
+          next memo[:tagname] = tagname if tagname
+          next memo[:id] = id if id
 
-            memo.fetch(:filters) { memo[:filters] = [] } << filter if filter
-            memo.fetch(:cls) { memo[:cls] = [] } << cls if cls
+          if attr_name && attr_value
+            next memo.fetch(:attrs) { memo[:attrs] = {} }[attr_name] = attr_value
           end
+
+          memo.fetch(:filters) { memo[:filters] = [] } << filter if filter
+          memo.fetch(:cls) { memo[:cls] = [] } << cls if cls
+        end
       end
     end
   end

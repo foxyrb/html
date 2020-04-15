@@ -503,9 +503,9 @@ nodes:
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<my>"
+  content: "<my-paragraph>"
   extra:
-  - my
+  - my-paragraph
   - 
   - []
 - !ruby/struct:Foxy::Html::Node
@@ -536,9 +536,9 @@ nodes:
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :closetag
-  content: "</my>"
+  content: "</my-paragraph>"
   extra:
-  - my
+  - my-paragraph
   - 
   - 
 - !ruby/struct:Foxy::Html::Node
@@ -547,9 +547,9 @@ nodes:
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :tag
-  content: "<my>"
+  content: "<my-paragraph>"
   extra:
-  - my
+  - my-paragraph
   - 
   - []
 - !ruby/struct:Foxy::Html::Node
@@ -624,9 +624,9 @@ nodes:
   extra: 
 - !ruby/struct:Foxy::Html::Node
   type: :closetag
-  content: "</my>"
+  content: "</my-paragraph>"
   extra:
-  - my
+  - my-paragraph
   - 
   - 
 - !ruby/struct:Foxy::Html::Node

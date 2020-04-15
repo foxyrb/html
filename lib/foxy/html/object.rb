@@ -17,8 +17,6 @@ module Foxy
             html.nodes
           elsif html.respond_to?(:to_str)
             html.to_str.scan(RE_HTML).map { |args| Node.build(*args) }
-          elsif html.respond_to?(:read)
-            html.read.scan(RE_HTML).map { |args| Node.build(*args) }
           else
             html
           end
@@ -32,44 +30,46 @@ module Foxy
         other.is_a?(self.class) && nodes == other.nodes
       end
 
-      def isearch(tagname: nil, id: nil, cls: nil, fun: nil, css: nil)
-        cls = Array(cls)
-        tagname &&= tagname.downcase
+      def isearch(**conditions)
+        conditions[:attrs] = Array(conditions[:attrs])
+        conditions[:cls] = Array(conditions[:cls])
+        conditions[:tagname] &&= conditions[:tagname].downcase
         y = 0
-        buff = []
-
+        buffer = []
         close_tagname = nil
         nodes.each do |node| # [1:-1]:
           # El orden de los if es importante para que devuelva el
           # primer y el ultimo nodo
-          if y.zero? && node.tag? && (!tagname || node.tagname! == tagname) &&
-             (!id || node.id! == id) && (cls - node.cls!).empty? &&
-             (!fun || fun.(node))
+          if y.zero? && node.tag? && check_conditions(node, **conditions)
             # Guardamos porque pudiera ser que el parametro
             # tagname fuera nil
             close_tagname = node.tagname!
-            y += 1
-
+            y = 1
           elsif y && node.tag? && node.tagname! == close_tagname
             y += 1
-
           end
 
-          buff << node if y > 0
+          buffer << node if y > 0
 
           y -= 1 if y > 0 && node.closetag? && node.tagname! == close_tagname
 
-          next unless buff && y.zero?
+          next unless buffer && y.zero?
 
-          yield Html.new(buff)
-          buff = []
+          yield Html.new(buffer)
+          buffer = []
           close_tagname = nil
         end
       end
 
-      def search(**kws)
-        return Collection.new([self]).search(kws) if kws[:css]
+      def check_conditions(node, tagname: nil, id: nil, cls: nil, fun: nil, attrs: nil)
+        (!tagname || node.tagname! == tagname) &&
+          (!id || node.id! == id) &&
+          (!fun || fun.(node)) &&
+          (cls - node.cls!).empty? &&
+          attrs.all? { |key, value| value === node.attr(key) }
+      end
 
+      def search(**kws)
         list = []
         isearch(**kws) { |val| list << val unless val.empty? }
         Collection.new(list)
@@ -132,8 +132,8 @@ module Foxy
         search(tagname: "table").map do |table|
           table.search(tagname: "tr").map do |tr|
             tr.search(tagname: "td").map(&:joinedtexts)
-          end
-        end
+          end.to_a
+        end.to_a
       end
 
       def empty?

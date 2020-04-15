@@ -64,6 +64,7 @@ module Foxy
       end
 
       def attr_regex(name)
+        # TODO: \b before name
         /#{name}=(("[^"]*")|('[^']*')|[^\s>]+)/mi
       end
 

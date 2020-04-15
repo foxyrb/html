@@ -89,6 +89,44 @@ RSpec.describe(Foxy::Html::Object) do
       expect(li2).to eq li
       expect(li2).to eq li3
     end
+
+    it "template slot[name=my-text]" do
+      shadowdom = load_fixture("shadowdom.html")
+      html = Foxy::Html::Object.new(shadowdom)
+
+      texts = html.css("template slot[name=my-text]").joinedtexts
+
+      expect(texts).to eq ["My default text"]
+    end
+
+    it "my-paragraph" do
+      shadowdom = load_fixture("shadowdom.html")
+      html = Foxy::Html::Object.new(shadowdom)
+
+      # texts = html.css("my-paragraph=").joinedtexts
+      texts = html.css("my-paragraph").joinedtexts
+
+      expect(texts).to eq ["Let's have some different text!", "Let's have some different text! In a list!"]
+    end
+
+    it "my-paragraph [slot=my-text]" do
+      shadowdom = load_fixture("shadowdom.html")
+      html = Foxy::Html::Object.new(shadowdom)
+
+      # texts = html.css("my-paragraph=").joinedtexts
+      texts = html.css("my-paragraph [slot=my-text]").joinedtexts
+
+      expect(texts).to eq ["Let's have some different text!", "Let's have some different text! In a list!"]
+    end
+
+    it "my-paragraph ul[slot=my-text]" do
+      shadowdom = load_fixture("shadowdom.html")
+      html = Foxy::Html::Object.new(shadowdom)
+
+      texts = html.css("my-paragraph ul[slot=my-text]").joinedtexts
+
+      expect(texts).to eq ["Let's have some different text! In a list!"]
+    end
   end
 
   describe "#as_number" do

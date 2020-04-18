@@ -8,6 +8,8 @@ module Foxy
       def attr(name)
         return id if name.to_s == "id"
 
+        return unless tag?
+
         value = attr_regex(name).match(content)
         value && value[1].sub(/\A('|")?/, "").sub(/('|")?\Z/, "")
       end
@@ -65,7 +67,7 @@ module Foxy
 
       def attr_regex(name)
         # TODO: \b before name
-        /#{name}=(("[^"]*")|('[^']*')|[^\s>]+)/mi
+        /\b#{name}=(("[^"]*")|('[^']*')|[^\s>]+)/mi
       end
 
       def self.build(closetag, singletag, tag, notag, comment, other)

@@ -113,7 +113,6 @@ RSpec.describe(Foxy::Html::Object) do
       shadowdom = load_fixture("shadowdom.html")
       html = Foxy::Html::Object.new(shadowdom)
 
-      # texts = html.css("my-paragraph=").joinedtexts
       texts = html.css("my-paragraph [slot=my-text]").joinedtexts
 
       expect(texts).to eq ["Let's have some different text!", "Let's have some different text! In a list!"]
@@ -126,6 +125,20 @@ RSpec.describe(Foxy::Html::Object) do
       texts = html.css("my-paragraph ul[slot=my-text]").joinedtexts
 
       expect(texts).to eq ["Let's have some different text! In a list!"]
+    end
+
+    it "[class=/p-|dt-/]" do
+      shadowdom = load_fixture("recipe.html")
+      html = Foxy::Html::Object.new(shadowdom)
+
+      texts = html.css("[class=/p-|dt-/]").texts(include_attrs: ["class"])
+
+      expect(texts).to eq [["\n", "p-name", "Bagels", "\n"],
+                           ["p-ingredient", "Flour"],
+                           ["p-ingredient", "Sugar"],
+                           ["p-ingredient", "Yeast"],
+                           ["dt-duration", "1 hour"],
+                           ["p-yield", "four people"]]
     end
 
     it "div div div" do

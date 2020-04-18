@@ -89,12 +89,13 @@ module Foxy
         nodes.map(&:content).join
       end
 
-      def texts
+      def texts(include_attrs: [])
         nodes.each_with_object([]) do |node, acc|
-          if node.type == :notag
-            acc << DECODER.decode(node.content)
-          elsif BLOCK_TAGS.include?(node.tagname!)
-            acc << "\n"
+          acc << DECODER.decode(node.content) if node.type == :notag
+          acc << "\n" if BLOCK_TAGS.include?(node.tagname!)
+          include_attrs.each do |attr|
+            value = node.attr(attr)
+            acc << value if value
           end
         end
       end

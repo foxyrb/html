@@ -18,12 +18,20 @@ module Foxy
         other.respond_to?(:to_a) && objects == other.to_a
       end
 
+      def to_h
+        to_a.to_h
+      end
+
       def attr(name)
         objects.each_with_object([]) { |object, acc| acc << object.attr(name) if object }
       end
 
       def first
         objects.first
+      end
+
+      def last
+        objects.last
       end
 
       def count
@@ -45,12 +53,14 @@ module Foxy
         end
       end
 
-      def texts
-        objects.map(&:texts)
+      def texts(*args, **kws)
+        objects.map { |object| object.texts(*args, **kws) }
       end
 
       def joinedtexts
-        objects.each_with_object([]) { |object, acc| acc << object.joinedtexts if object }
+        objects.each_with_object([]) do |object, acc|
+          acc << object.joinedtexts if object
+        end
       end
 
       def as_number
@@ -88,19 +98,23 @@ module Foxy
       # assert Foxy::Html.new.parse_css(".cls.class") == {cls: ["cls", "class"]}
       def parse_css(css)
         token = "([^:#\.\s\\[\\]]+)"
-        css
-          .scan(/#{token}|##{token}|\.#{token}|:#{token}|(?:\[#{token}=#{token}\])/)
-          .each_with_object({}) do |(tagname, id, cls, filter, attr_name, attr_value), memo|
-          next memo[:tagname] = tagname if tagname
-          next memo[:id] = id if id
+        attr_token = "([^\\[\\]=]+)"
+        (css
+                 .scan(/#{token}|##{token}|\.#{token}|:#{token}|(?:\[#{attr_token}=#{attr_token}\])/)
+                 .each_with_object({}) do |(tagname, id, cls, filter, attr_name, attr_value), memo|
+           next memo[:tagname] = tagname if tagname
+           next memo[:id] = id if id
 
-          if attr_name && attr_value
-            next memo.fetch(:attrs) { memo[:attrs] = {} }[attr_name] = attr_value
-          end
+           if attr_name && attr_value
+             if attr_value[0] == "/" && attr_value[-1] == "/"
+               attr_value = Regexp.new(attr_value[1...-1])
+              end
+             next memo.fetch(:attrs) { memo[:attrs] = {} }[attr_name] = attr_value
+           end
 
-          memo.fetch(:filters) { memo[:filters] = [] } << filter if filter
-          memo.fetch(:cls) { memo[:cls] = [] } << cls if cls
-        end
+           memo.fetch(:filters) { memo[:filters] = [] } << filter if filter
+           memo.fetch(:cls) { memo[:cls] = [] } << cls if cls
+         end)
       end
     end
   end
